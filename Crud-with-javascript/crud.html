@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINk rel="stylesheet" href="./crud.css"></LINk>
+    <title>CRUD TABLE</title>
+</head>
+<body>
+<h1 id="name">Cahier Table</h1> <br>
+<div class="row">
+    <div class="col-12">
+        <table id="customers">
+                <tr>
+                    <th>Item Unit</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                    <th>Buttons</th>
+                </tr>
+                <tr>
+                    <td>Cup</td>
+                    <td>its a large cup</td>
+                    <td>1000</td>
+                    <td>10</td>
+                    <td><button onclick="removeSelectedRow();">Remove</button></td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>30</td>
+                    <td>10</td>
+                    <td><button onclick="removeSelectedRow();">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td><button onclick="removeSelectedRow();">Remove</button></td>
+                </tr>
+                
+                
+        </table> 
+        
+        <div class="tab tab-2">
+            <td>Item Unit: <input type="text" name="Item Unit" id="Item Unit"></td>
+            <td>Description: <input type="text" name="Description" id="Description"></td>
+            <td>Price: <input type="number" name="Price" id="Price"></td>
+                        
+
+            
+            <button onclick="addHtmlTableRow();">Add</button>
+            <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+            <button onclick="removeSelectedRow();">Remove</button>
+        </div>
+           
+    </div>
+</div>
+<script src="./crud.js"></script>
+</body>
+</html>
